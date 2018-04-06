@@ -11,7 +11,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String currentAddress = OfflineLocationUtils.getLocationAddress(MainActivity.this);
-        Log.d(TAG, "currentAddress: " + currentAddress);
+//        String currentAddress = OfflineLocationUtils.getLocationAddressByProvince(MainActivity.this);
+//        Log.d(TAG, "currentAddress: " + currentAddress);
+
+        String currentCountry = OfflineLocationUtils.getLocationAddressByCountry(MainActivity.this);
+        Log.d(TAG, "currentCountry: " + currentCountry);
     }
 }
